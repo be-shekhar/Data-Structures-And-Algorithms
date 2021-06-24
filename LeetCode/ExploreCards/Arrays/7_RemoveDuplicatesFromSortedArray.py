@@ -44,3 +44,18 @@ Constraints:
     -10^4 <= nums[i] <= 10^4
     nums is sorted in non-decreasing order.
 '''
+
+class Solution:
+    def removeDuplicates(self, nums: List[int]) -> int:
+        # Solution below
+        arr_len = len(nums)
+        if arr_len>=1:
+            prev = nums[0]
+        i = 1
+        while i < arr_len:
+            if prev == nums[i]:
+                nums.pop(i)
+                arr_len = len(nums)
+            else:
+                prev = nums[i]
+                i += 1
