@@ -1,6 +1,6 @@
 # Below program contains code for Insertion Sort for integers
 
-def insersion_sort(arr):
+def insertion_sort(arr):
     for j in range(1, len(arr)):
         key = arr[j]
         i = j-1
